@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #56504f;
+  background-color: #f3efed;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
+
+main {
+  width: 800px;
+}
+
+img {
+  max-width: 100%;
+  margin: 3rem 0;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #a43825;
+  padding: 3rem 0;
+  border-bottom: 2px dotted #a43825;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: #867b79;
+  margin-bottom:2rem;
+}
+
+p {
+  margin-bottom: 2.5rem;
+}
+
+ul {
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+li { line-height: 3.2rem;}
+
+li::before { 
+  content: "🌸 ";
+  display: inline-block;
+  vertical-align: middle;
+  height: 3.5rem;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+ }
+
+strong {
+  color: #1b3438;
+}
+
+a:link, a:visited {
+  color: #cb8076;
+  font-weight: 600;
+}
+
+a:hover, a:active {
+  color: #a43825;
+}
+
+footer {
+  /* background-color: #867b79; */
+  background-color: rgba(203,128,118, 0.8);
+  margin: 3rem 0;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: #f3efed;
+  font-weight: bold;
+}
+
+footer a:link, footer a:visited {
+  color: #f3efed;
+  text-decoration: none;
+}
+
+footer a:hover, footer a:active {
+  color: #f3efed;
+  text-decoration: underline;
+}

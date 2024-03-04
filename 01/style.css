@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Manrope:wght@700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --color1: rgba(187, 127, 207, 1);
+  --color2: rgba(65, 3, 105, 1);
+  --color3: rgba(17, 4, 12, 1);
+  --color4: rgba(76, 16, 54, 1);
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: #111;
+  background-image: 
+    radial-gradient(at 108% 99%, var(--color3) 0px, transparent 60%),
+    radial-gradient(at 121% 5%, var(--color1) 0px, transparent 60%),
+    radial-gradient(at 61% 70%, var(--color2) 0px, transparent 50%),
+    radial-gradient(at 102% 99%, var(--color3) 0px, transparent 50%),
+    radial-gradient(at 21% 12%, var(--color3) 0px, transparent 50%),
+    radial-gradient(at 33% 34%, var(--color2) 0px, transparent 50%), 
+    radial-gradient(at 27% 89%, var(--color4) 0px, transparent 50%);
+  background-size: cover;
+}
+
+main {
+  text-align: center;
+}
+
+h1 {
+  color: rgba(251, 238, 247, 1);
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 8rem;
+}
+
+h2 {
+  color: rgba(251, 238, 247, 0.4);
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
