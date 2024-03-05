@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #111;
+    color: #dedede;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    overflow: hidden;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    min-height: 100dvh;
+    height: 100%;
+    position: relative;
+    background-color: #111;
+}
+
+section::before {
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:1;
+}
+
+section > * {
+    position: relative;
+    z-index: 100;
+}
+
+ul {
+    display: flex;
+    gap: 2rem;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+img {
+    width: 180px;
+    border-radius: 50%;
+}
+
+p:first-child {
+    margin-bottom: 2rem;
+}
+
+.fav a:link,
+.fav a:visited {
+    background-color:#111;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* 00 Seccion inicial
+------------------------------ */
+#top::before {
+    background:url('images/pietro-jeng-n6B49lTx7NM-unsplash.jpg');
+    background-size: cover;
+    opacity: 0.4;
+}
+
+#top {
+    padding: 0 20%;
+}
+
+#top p {
+    font-size: 2rem;
+    line-height:3.6rem;
+}
+
+.intro {
+    display: block;
+    font-size: 4rem;
+    line-height:6rem;
+    font-weight: 200;
+    margin-bottom: 3rem;
+}
+
+.meow {
+    display: inline-block;
+    word-break: keep-all;
+}
+
+#top a {
+    display: inline-block;
+    padding: 0 0.5rem;
+}
+
+#top a:link, #top a:visited {
+    color: #BE0000;
+    text-decoration: none;
+    background: rgba(0,0,0,0.5);
+}
+
+#top a:hover, #top a:active{
+    color: #009A4D;
+    text-decoration: none;
+    background: rgba(0,0,0,1);
+}
+
+#top a.external:link,
+#top a.external:visited {
+    color: #009A4D;
+}
+
+#top a.external:hover,
+#top a.external:active {
+    color: #BE0000;
+}
+
+/* 01 Seccion aprender
+------------------------------ */
+#aprender::before {
+    background:url('images/andyone--WW8jBak7bo-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+}
+
+/* 02 Seccion musica
+------------------------------ */
+#musica::before {
+    background:url('images/anthony-delanoix-hzgs56Ze49s-unsplash.jpg');
+    background-size: cover;
+    opacity: 0.3;
+}
+
+/* 03 Seccion videojuegos
+------------------------------ */
+#videojuegos::before {
+    background:url('images/alexey-savchenko-k4Akpt5-Sfk-unsplash.jpg');
+    background-size: cover;
+    opacity: 0.25;
+}
