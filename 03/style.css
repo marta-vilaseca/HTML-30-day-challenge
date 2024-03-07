@@ -17,7 +17,7 @@ body {
     overflow: hidden;
 }
 
-section {
+section, main {
     display: grid;
     place-items: center;
     width: 100%;
@@ -27,7 +27,8 @@ section {
     background-color: #111;
 }
 
-section::before {
+section::before,
+main::before {
     content:'';
     position: absolute;
     width: 100%;
@@ -35,7 +36,8 @@ section::before {
     z-index:1;
 }
 
-section > * {
+section > *,
+main > * {
     position: relative;
     z-index: 100;
 }

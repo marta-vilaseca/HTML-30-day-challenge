@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fira+Mono:wght@400;500;700&family=Gloria+Hallelujah&family=Homemade+Apple&family=Noto+Emoji:wght@600&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap");
+
+body {
+  background: #111 url("bg.jpg") top center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  gap: 3rem;
+  font-family: "Fira Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #eee;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  box-shadow: inset 0 0 8rem #0b0b06;
+}
+
+h1 {
+  color: gold;
+  padding: 2rem 0;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+section {
+  max-width: 900px;
+}
+
+h2 {
+  margin-bottom: 2rem;
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+strong {
+  color: gold;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  list-style-type: none;
+}
+
+.grid li {
+  background-color: rgba(238, 238, 238, 0.1);
+  padding: 1rem 2rem;
+}
+
+.grid li span {
+  color: gold;
+}
+
+span.icon {
+  font-family: "Noto Emoji", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+a:link,
+a:visited {
+  color: beige;
+  background: rgba(238, 238, 238, 0.25);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  background: rgba(238, 238, 238, 0.8);
+  color: #111;
+}
+
+.log {
+  position: relative;
+  padding: 2rem 3rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: left;
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}
+.log ul {
+  list-style-type: none;
+}
+
+.log li::before {
+  content: "» ";
+  font-weight: bold;
+  color: gold;
+}

@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fira+Mono:wght@400;500;700&family=Noto+Emoji:wght@600&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background: url("bg.jpg") center bottom no-repeat fixed;
+  background-size: full;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #eee;
+}
+
+h1 {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 6rem;
+  margin: 2rem 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+nav {
+  font-family: "Fira Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+nav li {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+header nav li:last-child::before {
+  content: "|";
+  font-weight: 200;
+  margin-right: 2rem;
+  opacity: 0.6;
+}
+
+nav a:link,
+nav a:visited {
+  color: #eee;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+nav a:hover,
+nav a:active {
+  color: #ef3a6f;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4rem;
+  top: -0.5rem;
+  left: -1rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: width 0.3s ease-in;
+  z-index: -1;
+}
+
+nav a:hover::before {
+  width: calc(100% + 2rem);
+}
+
+.grid {
+  position: relative;
+  font-family: "Fira Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style-type: none;
+  padding: 3rem;
+}
+
+.grid::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  filter: blur(4px);
+  z-index: -1;
+}
+
+.grid a,
+.grid span {
+  display: inline-block;
+  border-radius: 1rem;
+  width: 6rem;
+  height: 6rem;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  color: #111;
+}
+
+.grid a:link,
+.grid a:visited {
+  background-color: rgba(238, 238, 238, 0.6);
+  transition: background-color 0.2s ease-in;
+}
+
+.grid a:hover,
+.grid a:active {
+  background-color: rgba(238, 238, 238, 1);
+}
+
+.grid span {
+  background-color: rgba(238, 238, 238, 0.3);
+}
+
+footer {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  padding-bottom: 4rem;
+}

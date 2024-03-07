@@ -1,4 +1,4 @@
-![alt text](./common/banner.jpg)
+![alt text](./common/images/banner.jpg)
 
 Mis soluciones para los retos del HTML 30 day challenge propuesto por **[@ManzDev](https://github.com/ManzDev)** en https://lenguajehtml.com/challenge/
 
@@ -11,7 +11,7 @@ Mi reto personal, ya que llevo años trasteando con HTML y CSS, será intentar l
 | 01 | Crea una página HTML con código CSS desde un archivo diferente.                                                       | 📁 [01/](/01/) |
 | 02 | Crea una página con un titular, varios párrafos de texto y una imagen.                                                | 📁 [02/](/02/) |
 | 03 | Construye una página con un párrafo que tenga enlaces internos y externos (a otros sitios web).                       | 📁 [03/](/03/) |
-| 04 | Valida el código HTML de tus ejemplos anteriores (y los siguientes a partir de ahora).                                |                |
+| 04 | Valida el código HTML de tus ejemplos anteriores (y los siguientes a partir de ahora).                                | 📁 [04/](/04/) |
 | 05 | Ponle un título y una descripción al documento, ideal para SEO.                                                       |                |
 | 06 | Crea un grupo de secciones (acordeón) donde se despliegue sólo uno a la vez.                                          |                |
 | 07 | Coloca una imagen en formato JPEG-XL. Si el navegador no la soporta, que use AVIF. Sino, que use JPG.                 |                |
