@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fira+Mono:wght@400;500;700&family=Gloria+Hallelujah&family=Homemade+Apple&family=Noto+Emoji:wght@600&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fira+Mono:wght@400;500;700&family=Gloria+Hallelujah&family=Noto+Emoji:wght@600&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap");
 
 body {
   background: #111 url("bg.jpg") top center no-repeat;
@@ -10,7 +10,7 @@ body {
   gap: 3rem;
   font-family: "Fira Mono", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
   color: #eee;
