@@ -4,6 +4,8 @@ Mis soluciones para los retos del HTML 30 day challenge propuesto por **[@ManzDe
 
 Mi reto personal, ya que llevo años trasteando con HTML y CSS, será intentar llevar todos los retos un pasito más allá - ya sea añadiendo detalles extra o probando cosas que no haya probado antes 🤓
 
+Podéis ver el código de los retos aquí o verlos en funcionamiento en [html-30-day-challenge.vercel.app](https://html-30-day-challenge.vercel.app/)
+
 ## Retos y soluciones  
 
 | #  | Reto                                                                                                                  | Solución       |
