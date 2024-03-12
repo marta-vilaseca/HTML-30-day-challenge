@@ -58,7 +58,7 @@ nav a:visited {
 
 nav a:hover,
 nav a:active {
-  color: #ef3a6f;
+  color: white;
 }
 
 nav a::before {
