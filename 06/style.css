@@ -83,7 +83,7 @@ body {
 
 .accordion input[name=panel]:checked ~ .content {
   display:block;
-  max-height: 600px;
+  max-height: 1500px;
   height: fit-content;
 }
 
@@ -95,7 +95,7 @@ body {
   transition: all 0.4s ease-in-out;
 }
 
-.content article {
+.content .album-details {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -109,17 +109,17 @@ body {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.content section {
+.content .tracklist {
   font-size: 1.8rem;
   line-height: 3.5rem;
   flex-grow: 2;
 }
 
-.content section ol {
+.content .tracklist ol {
   list-style-position: inside;
 }
 
-.content section em {
+.content .tracklist em {
   font-style: italic;
   color: #666;
 }
@@ -214,13 +214,13 @@ footer a:hover, footer a:active {
   .accordion, header, footer {
     max-width: 900px;
   }
-  .content article {
+  .content .album-details {
     flex-direction: row;
   }
   .content .cover {
     max-width: 40%;
   }
-  .content section {
+  .content .tracklist {
     max-width: 60%;
   }
 }

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Noto+Emoji:wght@600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    background-color: #111;
+    color: snow;
+    padding: 4rem 2rem;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+}
+    
+h1 { 
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5rem;
+}
+
+.emoji {
+    font-family: "Noto Emoji", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+a:link, a:visited {
+    color: lightseagreen;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover, a:active {
+    color: coral;
+    text-decoration: underline;
+}
+
+a.button:link, a.button:visited {
+    background-color: teal;
+    color: snow;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    display: inline-block;
+}
+
+a.button:hover, a.button:active {
+    background-color: coral;
+    text-decoration: none;
+}
+
+p {
+    font-size: 2rem;
+    line-height: 3.6rem;
+    font-weight: 200;
+}
+
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+li { margin-bottom: 1rem;}
+
+em {
+    color: #AAA;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+figcaption {
+    color: #AAA;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    font-style: italic;
+}
+
+img {
+    max-height: 80dvh;
+}
+
+footer {
+    position: relative;
+    padding-top: 2rem;
+} 
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 3rem);
+    width: 6rem;
+    height: 2px;
+    background-color: #ccc;
+}
+
+/* MEDIA QUERIES
+------------------------------- */
+@media (min-width: 768px) {
+    body {
+        gap: 3rem;
+        padding: 3rem;
+    }
+
+    body > * {
+        max-width: 900px;
+    }
+}

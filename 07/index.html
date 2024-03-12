@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto #07</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="../common/css/reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JXL, AVIF y JPG</h1>
+    <p>O cómo utilizar distintos formatos de imagen en función de lo que soporte nuestro navegador.</p>
+    <a class="button" href="#explicacion">explicacion <span class="emoji">🔻</span></a>
+    <figure>
+        <picture>
+            <source srcset="images/nebula.jxl" type="image/jxl">
+            <source srcset="images/nebula.avif" type="image/avif">
+            <img src="images/nebula.jpg" alt="JPG Fallback picture for JPEG XL format and AVIF">
+        </picture>
+        <figcaption>¿No sabes qué formatos soporta tu navegador? Cada versión de la imagen lleva escrito en qué formato se está mostrando para que lo veas rápida y fácilmente :)</figcaption>
+    </figure>
+    <h2 id="explicacion">¿Cómo funciona?</h2>
+    <ul>
+        <li>Actualmente el formato JPEG XL <a href="https://caniuse.com/?search=jxl" target="_blank">sólo tiene soporte en versiones recientes de Safari</a> (y algunas versiones de Chrome, Firefox y Edge de forma experimental, teniendo que activarlo manualmente). Si es nuestro caso, estaremos viendo la imagen adjunta <em>en formato JXL</em></li>
+        <li>De no ser así, podremos recurrir <em>al formato AVIF</em>, soportado por <a href="https://caniuse.com/?search=avif" target="_blank">la amplia mayoría de los navegadores modernos</a>, para mostrar una versión alternativa de la imagen en dicho formato</li>
+        <li>Y en última instancia, para navegadores más antiguos o que no soporten ninguno de los formatos de imagen mencionados, recurriremos a la opción por defecto y estaremos viendo la imagen <em>en formato JPG</em></li>
+    </ul>
+    <footer>
+        Image by <a href="https://unsplash.com/photos/galaxy-0o_GEzyargo" target="_blank">Cerqueira @ Unsplash</a>
+    </footer>
+</body>
+</html>
