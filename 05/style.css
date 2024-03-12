@@ -26,7 +26,6 @@ main {
 
 h1 {
   font-family: "Fira Mono", monospace;
-  /* font-family: "Dosis", sans-serif; */
   font-weight: 500;
   font-style: normal;
   text-transform: lowercase;
@@ -34,16 +33,14 @@ h1 {
   background-color: #222;
   padding: 0 2.5rem;
   border-radius: 0.5rem;
-  font-size: 3rem;
-  line-height: 8rem;
+  font-size: 2.5rem;
+  line-height: 5rem;
 }
 
 img {
   border-radius: 50%;
-  max-width: 25%;
-  position: relative;
-  float: left;
-  margin-right: 4rem;
+  margin: 0 0 2rem 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 }
 
 .highlighted {
@@ -65,7 +62,7 @@ img {
 footer {
   background: rgba(238, 238, 238, 0.8);
   padding: 1rem 2rem;
-  width: 40%;
+  width: 96%;
   align-self: center;
   text-align: center;
   font-weight: 600;
@@ -81,4 +78,22 @@ a:visited {
 a:hover,
 a:active {
   text-decoration: underline;
+}
+
+/* MEDIA QUERIES
+------------------------------- */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 8rem;
+  }
+  img {
+    max-width: 25%;
+    position: relative;
+    float: left;
+    margin: 0 4rem 0 0;
+  }
+  footer {
+    width: 40%;
+  }
 }

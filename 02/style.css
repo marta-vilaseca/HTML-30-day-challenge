@@ -16,7 +16,7 @@ body {
 }
 
 main {
-  width: 800px;
+  width: calc(100% - 3rem);
 }
 
 img {
@@ -25,11 +25,11 @@ img {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.4rem;
   color: #a43825;
   padding: 3rem 0;
   border-bottom: 2px dotted #a43825;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -91,4 +91,16 @@ footer a:link, footer a:visited {
 footer a:hover, footer a:active {
   color: #f3efed;
   text-decoration: underline;
+}
+
+/* MEDIA QUERIES
+------------------------------- */
+@media (min-width: 900px) {
+  main {
+    width: 800px;
+  }
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
 }

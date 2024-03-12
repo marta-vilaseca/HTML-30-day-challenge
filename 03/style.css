@@ -42,21 +42,30 @@ main > * {
     z-index: 100;
 }
 
+h2 {
+    text-align: center;
+}
+
 ul {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
 }
 
 li {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 1rem;
 }
 
+li em { display: none;}
+
 img {
-    width: 180px;
-    border-radius: 50%;
+    width: 80px;
+    border-radius: 1rem;
 }
 
 p:first-child {
@@ -83,7 +92,7 @@ p:first-child {
 }
 
 #top {
-    padding: 0 20%;
+    padding: 3rem;
 }
 
 #top p {
@@ -91,10 +100,14 @@ p:first-child {
     line-height:3.6rem;
 }
 
+.desktop {
+    display: none;
+}
+
 .intro {
     display: block;
-    font-size: 4rem;
-    line-height:6rem;
+    font-size: 2.5rem;
+    line-height:4rem;
     font-weight: 200;
     margin-bottom: 3rem;
 }
@@ -105,7 +118,7 @@ p:first-child {
 }
 
 #top a {
-    display: inline-block;
+    display: inline;
     padding: 0 0.5rem;
 }
 
@@ -154,4 +167,42 @@ p:first-child {
     background:url('images/alexey-savchenko-k4Akpt5-Sfk-unsplash.jpg');
     background-size: cover;
     opacity: 0.25;
+}
+
+/* MEDIA QUERIES
+------------------------------- */
+@media (min-width: 768px) {
+    #top {
+        padding: 0 20%;
+    }
+    .desktop {
+        display: inline;
+    }
+    .intro {
+        display: block;
+        font-size: 4rem;
+        line-height:6rem;
+        font-weight: 200;
+        margin-bottom: 3rem;
+    }
+    #top a { display: inline-block; }
+    ul {flex-direction: row;}
+    li {flex-direction: column;}
+    li em { display: inline-block;}
+    img {
+        width: 120px;
+        border-radius: 50%;
+    }
+}
+
+@media (min-width: 900px) {
+    img {
+        width: 150px;
+    }
+}
+
+@media (min-width: 1200px) {
+    img {
+        width: 180px;
+    }
 }

@@ -49,7 +49,7 @@ p {
 .grid {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   list-style-type: none;
 }
 
@@ -86,20 +86,10 @@ a:active {
   color: #111;
 }
 
-.log {
-  position: relative;
-  padding: 2rem 3rem;
-  background-color: rgba(0, 0, 0, 0.3);
-  text-align: left;
-  font-size: 1.6rem;
-  margin: 2rem 0;
-}
-.log ul {
-  list-style-type: none;
-}
-
-.log li::before {
-  content: "» ";
-  font-weight: bold;
-  color: gold;
+/* MEDIA QUERIES
+------------------------------- */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
