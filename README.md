@@ -17,7 +17,7 @@ Podéis ver el código de los retos aquí o verlos en funcionamiento en [html-30
 | 05 | Ponle un título y una descripción al documento, ideal para SEO.                                                       | 📁 [05/](/05/) |
 | 06 | Crea un grupo de secciones (acordeón) donde se despliegue sólo uno a la vez.                                          | 📁 [06/](/06/) |
 | 07 | Coloca una imagen en formato JPEG-XL. Si el navegador no la soporta, que use AVIF. Sino, que use JPG.                 | 📁 [07/](/07/) |
-| 08 | Crear un párrafo de texto con palabras destacadas en diferentes colores.                                              |                |
+| 08 | Crear un párrafo de texto con palabras destacadas en diferentes colores.                                              | 📁 [08/](/08/) |
 | 09 | Crea un pergamino con una lista de objetos, donde se numere con números romanos (mayúsculas).                         |                |
 | 10 | Inserta un video de Youtube en una página y estila con CSS para que se vea bien.                                      |                |
 | 11 | Escribe un texto con super/subíndices (fórmulas químicas, por ejemplo).                                               |                |

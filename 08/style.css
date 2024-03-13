@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    background-color: snow;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 3rem;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
+    line-height: 3.8rem;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    min-height: auto;
+     3rem 7rem;
+}
+
+p {
+    max-width: 75ch;
+    text-align: center;
+}
+
+.highlight {
+    position: relative;
+    display: inline-block;
+    line-height: 3rem;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+}
+
+.highlight:hover {
+    background: transparent;
+}
+
+@keyframes highlighter {
+    0% {width:0%;}
+    100% {width:100%;}
+}
+
+.highlight::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    animation-fill-mode:forwards;
+    border-radius: 0.5rem;
+    z-index: -1;
+}
+
+.highlight:hover::before {
+    animation-name: highlighter;
+    animation-duration: 0.5s;
+    cursor: text;
+}
+
+.sapphire,
+.sapphire::before {background-color: rgba(65, 105, 225); color: snow;}
+
+.azure,
+.azure::before {background-color: rgb(0, 191, 255);}
+
+.crimson,
+.crimson::before {background-color: rgb(220, 20, 60); color: snow;}
+.darkred,
+.darkred::before {background-color: rgb(139, 0, 0); color: snow;}
+
+.periwinkle,
+.periwinkle::before {background-color: rgb(221, 160, 221);}
+.lavender,
+.lavender::before {background-color: rgb(230, 230, 250);}
+.indigo,
+.indigo::before {background-color: rgb(75, 0, 130); color: snow;}
+
+.green,
+.green::before {background-color: rgb(154, 205, 50);}
+.emerald,
+.emerald::before {background-color: rgb(46, 139, 87); color: snow;}
+.jade,
+.jade::before {background-color: rgb(60, 179, 113);}
+
+
+.obsidian,
+.obsidian::before {background-color: rgb(17,17,17); color: snow;}
+.darkgray,
+.darkgray::before {background-color: rgb(169, 169, 169); color: snow;}
+
+.ivory,
+.ivory::before {background-color: rgb(255, 255, 240); color: rgb(184, 134, 11)}
+.linen,
+.linen::before {background-color: rgb(250, 240, 230); color:rgb(160, 82, 45);}
+
+.yellow,
+.yellow::before {background-color: rgb(255, 215, 0);}
+.gold,
+.gold::before {background-color: rgb(218, 165, 32);}
+.orange,
+.orange::before {background-color: rgb(255, 140, 0);}
+
+.pink,
+.pink::before {background-color: rgb(255, 20, 147); color: snow;}
